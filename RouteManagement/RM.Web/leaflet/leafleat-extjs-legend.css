@@ -1,0 +1,168 @@
+﻿.leaflet-zoom-box-crosshair {
+            cursor: crosshair !important; 
+        }
+        .x-autocontainer-outCt
+        {
+            z-index:999;
+        }
+        .noIcon
+        {
+            display:none;
+        }
+        .legendTree
+        {
+            background: rgba(0,0,0,0.6);
+            color:White;
+            border-radius: 8px;
+            padding:5px 2px 5px 2px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+            max-width:500px;
+            min-width:200px;
+        }
+        .legendTree div
+        {
+            width:auto !important;
+            
+        }
+        .legendTree span
+        {
+            color:White;
+        }
+        .legendTree table
+        {
+            background-color:transparent !important;
+        }
+        
+        .leaflet-clear-shape .leaflet-interactive
+        {
+            cursor:url('../../../images/map/eraser.ico')0 15,auto !important; 
+        }
+        .leaflet-clear-shape
+        {
+            cursor:url('../../../images/map/eraser.ico') 0 15,auto !important; 
+        }
+        .statusbar
+        {
+            background: rgba(153, 178, 191,0.6);
+            color:White;
+            border-radius: 8px;
+            padding:0;
+            box-shadow: 0 1px 5px rgba(153, 178, 191,0.4);
+            max-width:500px;
+            min-width:200px;
+        }
+        .statusbar div
+        {
+            width:auto !important;
+        }
+        .statusbar span
+        {
+            color:White;
+        }
+        .statusbar table
+        {
+            background-color:transparent !important;
+        }
+
+        
+        /* ================================================================== */
+/* Drawing styles
+/* ================================================================== */
+
+.measure-marker {
+	background-color: #fff;
+	cursor: crosshair;
+}
+
+/*rgb(255, 99, 25);*/
+
+.measure {
+	background: white;
+	border: 1px solid gray;
+	color:Gray;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+	font-size: 12px;
+	margin-left: 10px;
+	margin-top: -21px;
+	padding: 0 4px 1px 0;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 9999;
+}
+
+
+
+.measure-error{
+	background-color: #F2DEDE;
+	border: 1px solid #E6B6BD;
+	color: #B94A48;
+}
+.measure-close
+{
+    width:12px !important;
+    height:12px !important;
+    margin-left:8px;
+    margin-top:-6px;
+     border-width:0px !important;
+    background-image:url(../../../../../Content/Images/map/redclose.png)!important;
+    cursor:pointer !important;
+    z-index:9999;
+}
+
+.measure-top
+{
+    -webkit-border-radius: 0px !important;
+	        border-radius: 0px !important;
+    padding:3px 5px !important;
+    border:1px solid Red !important;
+    color: black;
+}
+
+.measure-circle
+{
+    -webkit-border-radius: 50%;
+	        border-radius: 50%;
+    border:2px solid red !important;
+}
+.measure-move-tip
+{
+     -webkit-border-radius: 0px !important;
+	        border-radius: 0px !important;
+    margin-top:10px;
+    padding:3px 5px !important;
+    border:1px solid Red !important;
+}
+
+.measuret-error:before {
+	border-right-color: #E6B6BD;
+}
+
+.measure-single {
+	margin-top: -12px
+}
+
+.leaflet-draw-tooltip-subtext {
+	color: black;
+}
+
+.leaflet-draw-guide-dash {
+	font-size: 1%;
+	opacity: 0.6;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+}
+
+.my-div-icon
+{
+    width:80px !important; 
+    font-weight:bold;
+    text-align:center;
+    font-size: 12px;
+    /*描边*/
+    text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+    -webkit-text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+    -moz-text-shadow:#fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+    *filter: Glow(color=#fff, strength=1);
+}

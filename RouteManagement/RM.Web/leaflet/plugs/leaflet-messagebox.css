@@ -1,0 +1,21 @@
+.leaflet-control-messagebox {
+	display: none; /* Initially hidden */
+	/*border: 2px solid red;
+	background-color: white;*/
+	padding: 3px 0px;
+}
+.legend-point
+{
+    color:Red;
+    font-size:25px;
+    margin-top:-2px;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    display:inline-block
+}
+.lengend-text
+{
+    position :absolute;
+    margin-top:2px;
+}

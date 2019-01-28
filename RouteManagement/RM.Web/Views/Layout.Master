@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="RM.Web.Views.Layout" %>
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <%=string.Format("<link href=\"{0}/Extjs-5.1.0/packages/ext-theme-classic/build/resources/ext-theme-classic-all.css\" type=\"text/css\" rel=\"Stylesheet\" />", "")%>
+    <%=string.Format("<link href=\"{0}/Content/Css/fws-all.css?v={1}\" type=\"text/css\" rel=\"Stylesheet\" />", "", "")%>
+    <style type="text/css">
+        div, span, label
+        {
+            font-size: 12px !important;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="CssContent" runat="server" />
+</head>
+<body>
+    <div id="loading-mask">
+    </div>
+    <div id="loading">
+        <div class="loading-indicator">
+            <img src="/Content/Images/loading1.gif" alt="" width="32" height="32"
+                style="margin-right: 8px;" align="absmiddle" />
+            <noscript>
+                <span style='color: red;'>Error: Please allow JavaScript to run!</span>
+            </noscript>
+            <div id="loading-div">
+                Loading
+            </div>
+        </div>
+    </div>
+    <p id="msgmsg">
+    </p>
+    <asp:ContentPlaceHolder ID="HiddenContent" runat="server" />
+    <script type="text/javascript" src="/Extjs-5.1.0/ext-all.js"></script>
+    <script type="text/javascript" src="/app/CoreInit.js?_v="></script>
+    <script type="text/javascript">
+        RM.ScriptLoad('/Extjs-5.1.0/packages/ext-locale/build/ext-locale-zh_CN.js');
+    </script>
+    <asp:ContentPlaceHolder ID="ResourceContent" runat="server" />
+    <asp:ContentPlaceHolder ID="ScriptLoadContent" runat="server" />
+    <script type="text/javascript">
+        (function () {
+            Ext.onReady(function () {
+                Ext.Loader.setConfig({
+                    enabled: true,
+                    disableCaching: false,
+                    paths: {
+                        'Ext': RM.Url('/Extjs-5.1.0'),
+                        'RM': RM.Url('/app')
+                    }
+                });
+                Ext.QuickTips.init();
+                var hideMask = function () {
+                    var loading = Ext.fly('loading');
+                    if (!Ext.isEmpty(loading)) {
+                        loading.remove();
+                        Ext.fly('loading-mask').animate({
+                            opacity: 0,
+                            remove: true
+                        });
+                    }
+                };
+                Ext.defer(hideMask, 250);
+            });
+        })();
+    </script>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+</body>
+</html>

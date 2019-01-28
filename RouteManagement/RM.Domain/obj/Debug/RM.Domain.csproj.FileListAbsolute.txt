@@ -1,0 +1,7 @@
+D:\front-work\vuejs\works\RMSystem\RouteManagement\RM.Domain\bin\Debug\RM.Domain.dll
+D:\front-work\vuejs\works\RMSystem\RouteManagement\RM.Domain\bin\Debug\RM.Domain.pdb
+D:\front-work\vuejs\works\RMSystem\RouteManagement\RM.Domain\bin\Debug\RM.Common.dll
+D:\front-work\vuejs\works\RMSystem\RouteManagement\RM.Domain\bin\Debug\RM.Common.pdb
+D:\front-work\vuejs\works\RMSystem\RouteManagement\RM.Domain\obj\Debug\RM.Domain.csprojResolveAssemblyReference.cache
+D:\front-work\vuejs\works\RMSystem\RouteManagement\RM.Domain\obj\Debug\RM.Domain.dll
+D:\front-work\vuejs\works\RMSystem\RouteManagement\RM.Domain\obj\Debug\RM.Domain.pdb
